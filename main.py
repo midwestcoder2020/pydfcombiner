@@ -23,10 +23,6 @@ class PDFCombinerWrapper:
         else:
             print("PDF Library Found. Skipping PDF Library Installation!")
 
-    def getUserInput(self):
-        userFileName = input("Enter pdf file to work with or 'c' to continue: ").strip()
-        return userFileName
-
     def validateFilePath(self,p):
         if os.path.exists(p):
             return True
